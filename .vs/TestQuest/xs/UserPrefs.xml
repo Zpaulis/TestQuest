@@ -1,0 +1,52 @@
+﻿<Properties StartupConfiguration="{032AFB9F-287D-4D55-AB0A-72EA602D7316}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/MainActivity.cs">
+    <Files>
+      <File FileName="TestQuest/QuestActivity.cs" Line="51" Column="1" />
+      <File FileName="TestQuest/MainActivity.cs" Line="29" Column="135" />
+      <File FileName="TestQuest/google-services.json" />
+      <File FileName="TestQuest/Resources/layout/questionLayout.xml" />
+      <File FileName="TestQuest/EventListeners/WaitForClick.cs" />
+      <File FileName="TestQuest/ResultActivity.cs" />
+      <File FileName="TestQuest/Resources/values/strings.xml" Line="12" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TestQuest" expanded="True">
+            <Node name="TestQuest" expanded="True">
+              <Node name="app" expanded="True" />
+              <Node name="DataModels" expanded="True" />
+              <Node name="EventListeners" expanded="True" />
+              <Node name="Helpers" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="layout" expanded="True" />
+                <Node name="values" expanded="True" />
+              </Node>
+              <Node name="MainActivity.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>database</Value>
+          <Value>questionList</Value>
+          <Value>qCount</Value>
+          <Value>snap</Value>
+          <Value>docsnap</Value>
+          <Value>path</Value>
+          <Value>question</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3_-_api_28" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

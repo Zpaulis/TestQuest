@@ -1,0 +1,68 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj": {}
+  },
+  "projects": {
+    "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj",
+        "projectName": "TestQuest",
+        "projectPath": "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj",
+        "packagesPath": "/Users/paulismacbook/.nuget/packages/",
+        "outputPath": "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/paulismacbook/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid13.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid13.0": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid13.0": {
+          "dependencies": {
+            "Google.Cloud.Firestore": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Xamarin.AndroidX.AppCompat": {
+              "target": "Package",
+              "version": "[1.6.1.2, )"
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.7.5, )"
+            },
+            "Xamarin.Firebase.Database": {
+              "target": "Package",
+              "version": "[120.2.1, )"
+            },
+            "Xamarin.Firebase.Firestore": {
+              "target": "Package",
+              "version": "[124.6.0, )"
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.9.0.1, )"
+            },
+            "Xamarin.Google.Guava": {
+              "target": "Package",
+              "version": "[31.1.0.7, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,8 +21,9 @@ using System.Threading;
 using Google.Cloud.Firestore;
 using System.IO;
 using Xamarin.Essentials;
-
-
+using Result = TestQuest.DataModels.Result;
+using AndroidX.Core.App;
+using Newtonsoft.Json;
 
 namespace TestQuest
 {
@@ -42,11 +43,16 @@ namespace TestQuest
         public Question actualQuestion;
         public int rightAnswers = 0;
 
+        public Result result;
+       
+
+
         protected override async void OnCreate (Bundle savedInstanceState)
 		{
 			base.OnCreate (savedInstanceState);
             SetContentView(Resource.Layout.questionLayout);
 			int qCount = Intent.GetIntExtra("Qcount", 10);
+            CreateResult();
 
             // Te vajadzētu būt jautājumu datu bāzes inicializācijai
             //string path = AppDomain.CurrentDomain.BaseDirectory + @"study.json";
@@ -99,11 +105,13 @@ namespace TestQuest
                 await btnGiveAnsver.WhenClicked();
                 btnGiveAnsver.Click += AnswerApproved;
 
-                if (counter == qCount)
+                if (i == qCount - 1)
                 {
+                    string json = JsonConvert.SerializeObject(result, Formatting.Indented);
                     Intent intent = new Intent(this, typeof(ResultActivity));
-                    intent.PutExtra("RightAnsvers", rightAnswers);
+                    intent.PutExtra("Result", json);
                     StartActivity(intent);
+                    Finish();
                 }
 
 
@@ -167,22 +175,18 @@ namespace TestQuest
         private void AnswerApproved(object sender, EventArgs e)
         {
             var checkedRadioButton = FindViewById<RadioButton>(radioGroup1.CheckedRadioButtonId);
-            
                 counter+=1;
-
                 if (radioGroup1.CheckedRadioButtonId == -1)
-                {
-                    //nekas nav ieklikšķināts - nepareiza atbilde
+                {  //nekas nav ieklikšķināts - nepareiza atbilde
                 }
                 else
                 {// Kura izvēle ir ieklikšķināta
-
                 if ((checkedRadioButton.Text == actualQuestion.atb1text) && actualQuestion.atb1right) { rightAnswers += 1; };
                 if ((checkedRadioButton.Text == actualQuestion.atb2text) && actualQuestion.atb2right) { rightAnswers += 1; };
                 if ((checkedRadioButton.Text == actualQuestion.atb3text) && actualQuestion.atb3right) { rightAnswers += 1; };
                 if ((checkedRadioButton.Text == actualQuestion.atb4text) && actualQuestion.atb4right) { rightAnswers += 1; };
 
-
+                // Var arī šādi, vienalga strādā nepareizi.
 
                 //    if (radAtb1.Checked && actualQuestion.atb1right) { rightAnswers+=1; }
                 //    else
@@ -198,10 +202,7 @@ namespace TestQuest
                 //        }
                 //    }
             }
-
-            Toast.MakeText(this, rightAnswers.ToString(), ToastLength.Short).Show();
-
-            
+            Toast.MakeText(this, rightAnswers.ToString(), ToastLength.Long).Show();
         }
 
         // Apstrādā Radio butonus - netiek izmantots
@@ -211,6 +212,25 @@ namespace TestQuest
             Toast.MakeText(this, rb.Text, ToastLength.Short).Show();
         }
 
+        private void CreateResult()
+        {
+            // new Result("", "", "Anonymous", "", 10, false, false, false, false, false, false, false, false, false, false, 2.5);
+            result.key = "";
+            result.login = "";
+            result.nick = "Anonymous";
+            result.size = 10;
+            result.q1 = false;
+            result.q2 = false;
+            result.q3 = false;
+            result.q4 = false;
+            result.q5 = false;
+            result.q6 = false;
+            result.q7 = false;
+            result.q8 = false;
+            result.q9 = false;
+            result.q10 = false;
+            result.perc = 0;
+        }
 
     }
 

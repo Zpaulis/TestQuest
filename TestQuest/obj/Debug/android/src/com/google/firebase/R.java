@@ -116,39 +116,39 @@ public final class R {
 		public static final int async = 0x7f090054;
 		public static final int blocking = 0x7f09005e;
 		public static final int bottom = 0x7f09005f;
-		public static final int chronometer = 0x7f09007d;
-		public static final int dialog_button = 0x7f0900a2;
-		public static final int end = 0x7f0900bc;
-		public static final int forever = 0x7f0900d0;
-		public static final int icon = 0x7f0900e2;
-		public static final int icon_group = 0x7f0900e3;
-		public static final int info = 0x7f0900ef;
-		public static final int italic = 0x7f0900f3;
-		public static final int left = 0x7f0900f9;
-		public static final int line1 = 0x7f0900fd;
-		public static final int line3 = 0x7f0900fe;
-		public static final int none = 0x7f09014a;
-		public static final int normal = 0x7f09014b;
-		public static final int notification_background = 0x7f09014d;
-		public static final int notification_main_column = 0x7f09014e;
-		public static final int notification_main_column_container = 0x7f09014f;
-		public static final int right = 0x7f090172;
-		public static final int right_icon = 0x7f090174;
-		public static final int right_side = 0x7f090175;
-		public static final int start = 0x7f0901b9;
-		public static final int tag_accessibility_actions = 0x7f0901c5;
-		public static final int tag_accessibility_clickable_spans = 0x7f0901c6;
-		public static final int tag_accessibility_heading = 0x7f0901c7;
-		public static final int tag_accessibility_pane_title = 0x7f0901c8;
-		public static final int tag_screen_reader_focusable = 0x7f0901cc;
-		public static final int tag_transition_group = 0x7f0901ce;
-		public static final int tag_unhandled_key_event_manager = 0x7f0901cf;
-		public static final int tag_unhandled_key_listeners = 0x7f0901d0;
-		public static final int text = 0x7f0901d2;
-		public static final int text2 = 0x7f0901d3;
-		public static final int time = 0x7f0901e2;
-		public static final int title = 0x7f0901e3;
-		public static final int top = 0x7f0901e7;
+		public static final int chronometer = 0x7f09007e;
+		public static final int dialog_button = 0x7f0900a3;
+		public static final int end = 0x7f0900bd;
+		public static final int forever = 0x7f0900d1;
+		public static final int icon = 0x7f0900e3;
+		public static final int icon_group = 0x7f0900e4;
+		public static final int info = 0x7f0900f0;
+		public static final int italic = 0x7f0900f4;
+		public static final int left = 0x7f0900fa;
+		public static final int line1 = 0x7f0900fe;
+		public static final int line3 = 0x7f0900ff;
+		public static final int none = 0x7f09014b;
+		public static final int normal = 0x7f09014c;
+		public static final int notification_background = 0x7f09014e;
+		public static final int notification_main_column = 0x7f09014f;
+		public static final int notification_main_column_container = 0x7f090150;
+		public static final int right = 0x7f090173;
+		public static final int right_icon = 0x7f090175;
+		public static final int right_side = 0x7f090176;
+		public static final int start = 0x7f0901ba;
+		public static final int tag_accessibility_actions = 0x7f0901c6;
+		public static final int tag_accessibility_clickable_spans = 0x7f0901c7;
+		public static final int tag_accessibility_heading = 0x7f0901c8;
+		public static final int tag_accessibility_pane_title = 0x7f0901c9;
+		public static final int tag_screen_reader_focusable = 0x7f0901cd;
+		public static final int tag_transition_group = 0x7f0901cf;
+		public static final int tag_unhandled_key_event_manager = 0x7f0901d0;
+		public static final int tag_unhandled_key_listeners = 0x7f0901d1;
+		public static final int text = 0x7f0901d3;
+		public static final int text2 = 0x7f0901d4;
+		public static final int time = 0x7f0901e3;
+		public static final int title = 0x7f0901e4;
+		public static final int top = 0x7f0901e8;
 	}
 	public static final class integer {
 		public static final int google_play_services_version = 0x7f0a0008;
@@ -167,8 +167,8 @@ public final class R {
 		public static final int firebase_common_keep = 0x7f100000;
 	}
 	public static final class string {
-		public static final int common_google_play_services_unknown_issue = 0x7f11003d;
-		public static final int status_bar_notification_info_overflow = 0x7f1100cc;
+		public static final int common_google_play_services_unknown_issue = 0x7f11003e;
+		public static final int status_bar_notification_info_overflow = 0x7f1100cd;
 	}
 	public static final class style {
 		public static final int TextAppearance_Compat_Notification = 0x7f1201bc;

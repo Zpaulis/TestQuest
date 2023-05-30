@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3MmTumByuXFcGv9PyobfKa4JrkQUJ5inzQy2zeRjhLoTtFg18iNfOl2N8w/T5KK+kKFb/VdDlUwnAEHcPFQ9CQ==",
+  "dgSpecHash": "nxMLQfluqxjqDy2fzHTItizm4vsDwzDHD8nIe11CJ7x1U/7fGyVrjyIicTLDINkFdMASA8Mfgpwtnq2X+ULG/A==",
   "success": true,
   "projectFilePath": "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,7 @@
     "/Users/paulismacbook/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/microsoft.extensions.logging.abstractions/3.0.3/microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
-    "/Users/paulismacbook/.nuget/packages/newtonsoft.json/13.0.2/newtonsoft.json.13.0.2.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/square.okio/3.2.0/square.okio.3.2.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/square.okio.jvm/3.2.0/square.okio.jvm.3.2.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",

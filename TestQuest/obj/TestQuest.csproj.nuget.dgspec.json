@@ -36,6 +36,10 @@
               "target": "Package",
               "version": "[3.3.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Xamarin.AndroidX.AppCompat": {
               "target": "Package",
               "version": "[1.6.1.2, )"

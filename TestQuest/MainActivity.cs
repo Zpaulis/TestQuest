@@ -41,13 +41,19 @@ namespace TestQuest
 
             // ToDo pielikt switch ar timeri / bez timera
 
+
+
             Button btnStartQuest = FindViewById<Button>(Resource.Id.btnStartQuest);
             btnStartQuest.Click += (s, e) =>
             {
-                nickname = edtNickname.Text;
+                String start = DateTime.Now.ToString();
+                String nickname = (edtNickname.Text != "") ? edtNickname.Text : "Annonymous";
                 Intent intent = new Intent(this, typeof(QuestActivity));
                 intent.PutExtra("Qcount", qCount);
+                intent.PutExtra("Nickname", nickname);
+                intent.PutExtra("Start", start);
                 StartActivity(intent);
+                Finish();
             };
 
 

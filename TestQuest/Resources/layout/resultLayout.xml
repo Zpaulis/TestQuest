@@ -63,6 +63,16 @@
         android:layout_gravity="center"
         android:background="@drawable/button"/>
 
+   <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:text="@string/btn_quit"
+        android:textColor="@android:color/white"
+        android:padding="10dip"
+        android:layout_gravity="center"
+        android:background="@drawable/button"/>
         </LinearLayout>
 
 </LinearLayout>

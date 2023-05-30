@@ -8,7 +8,7 @@ package androidx.activity;
 
 public final class R {
 	public static final class id {
-		public static final int report_drawn = 0x7f090170;
-		public static final int view_tree_on_back_pressed_dispatcher_owner = 0x7f0901fe;
+		public static final int report_drawn = 0x7f090171;
+		public static final int view_tree_on_back_pressed_dispatcher_owner = 0x7f0901ff;
 	}
 }

@@ -24,6 +24,7 @@ item;obj/Debug/res/values/styles.xml
 LinearLayout;obj/Debug/res/layout/activity_main.xml
 LinearLayout;obj/Debug/res/layout/questionlayout.xml
 LinearLayout;obj/Debug/res/layout/resultlayout.xml
+monochrome;obj/Debug/res/mipmap-anydpi-v26/ic_launcher.xml
 paths;/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/lp/54/jl/res/xml/xamarin_essentials_fileprovider_file_paths.xml
 RadioButton;obj/Debug/res/layout/questionlayout.xml
 RadioGroup;obj/Debug/res/layout/questionlayout.xml

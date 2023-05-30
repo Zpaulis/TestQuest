@@ -590,3 +590,5 @@
 /Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/stamp/_GenerateJavaStubs.stamp
 /Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/stamp/_GeneratePackageManagerJava.stamp
 /Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/stamp/_ResolveLibraryProjectImports.stamp
+/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/res/raw/win.mp4
+/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/obj/Debug/res/raw/lose.mp4

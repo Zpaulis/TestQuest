@@ -1,37 +1,25 @@
 ﻿<Properties StartupConfiguration="{032AFB9F-287D-4D55-AB0A-72EA602D7316}|Default">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.R58NB3W2A4T" />
-  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_3_-_api_28" AndroidDesignerPreferredDevice="Nexus 4" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/QuestActivity.cs">
     <Files>
-      <File FileName="TestQuest/QuestActivity.cs" Line="25" Column="1" />
-      <File FileName="TestQuest/MainActivity.cs" />
-      <File FileName="TestQuest/google-services.json" />
-      <File FileName="TestQuest/ResultActivity.cs" />
-      <File FileName="TestQuest/Resources/layout/activity_main.xml" />
+      <File FileName="TestQuest/QuestActivity.cs" Line="185" Column="77" />
+      <File FileName="TestQuest/MainActivity.cs" Line="16" Column="30" />
+      <File FileName="TestQuest/ResultActivity.cs" Line="72" Column="75" />
       <File FileName="TestQuest/Resources/layout/questionLayout.xml" />
-      <File FileName="TestQuest/DataModels/Result.cs" Line="23" Column="11" />
-      <File FileName="TestQuest/Resources/AboutResources.txt" />
+      <File FileName="TestQuest/DataModels/Result.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestQuest" expanded="True">
             <Node name="TestQuest" expanded="True">
-              <Node name="app" expanded="True" />
-              <Node name="Assets" expanded="True" />
               <Node name="DataModels" expanded="True" />
-              <Node name="EventListeners" expanded="True" />
-              <Node name="Helpers" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Resources" expanded="True">
                 <Node name="drawable" expanded="True" />
                 <Node name="layout" expanded="True" />
+                <Node name="Raw" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
               <Node name="QuestActivity.cs" selected="True" />
@@ -47,9 +35,16 @@
           <Value>counter</Value>
           <Value>actualQuestion</Value>
           <Value>rightAnswers</Value>
+          <Value>result</Value>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.R58NB3W2A4T" />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

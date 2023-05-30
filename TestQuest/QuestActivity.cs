@@ -52,7 +52,9 @@ namespace TestQuest
 			base.OnCreate (savedInstanceState);
             SetContentView(Resource.Layout.questionLayout);
 			int qCount = Intent.GetIntExtra("Qcount", 10);
+            string nickname = Intent.GetStringExtra("Nickname");
             CreateResult();
+            result.nick = nickname;
 
             // Te vajadzētu būt jautājumu datu bāzes inicializācijai
             //string path = AppDomain.CurrentDomain.BaseDirectory + @"study.json";
@@ -62,6 +64,7 @@ namespace TestQuest
             //RetriveData();
             //Toast.MakeText(this, $"ttt", ToastLength.Short).Show();
             getTestData();
+
             // Atstāj tikai nepieciešamo jautājumu skaitu
             var rnd = new Random();
             while (questionList.Count > qCount)
@@ -83,8 +86,8 @@ namespace TestQuest
 
             for (int i = 0; i < qCount; i++ )
             {
-                string teststring = "List of " + questionList.Count.ToString() + "; " + counter.ToString() + "; " + rightAnswers.ToString() + "; " + i.ToString();
-                txtNickname.Text = teststring; // vērtību kontrole testa laikā
+                string teststring = nickname + " List of " + questionList.Count.ToString() + "; " + counter.ToString() + "; " + rightAnswers.ToString() + "; " + i.ToString();
+                txtNickname.Text = teststring; // vērtību kontrole aplikācijas testēšanas laikā
                 var quest = questionList[i];
 
                 txtJaut.Text = quest.jaut;
@@ -105,8 +108,11 @@ namespace TestQuest
                 await btnGiveAnsver.WhenClicked();
                 btnGiveAnsver.Click += AnswerApproved;
 
+                // Quests beidzies - apkopojam rezultātus
+                // ToDo - savākt statistiku par katra jautājuma rezultātiem
                 if (i == qCount - 1)
                 {
+                    result.perc = rightAnswers / qCount;
                     string json = JsonConvert.SerializeObject(result, Formatting.Indented);
                     Intent intent = new Intent(this, typeof(ResultActivity));
                     intent.PutExtra("Result", json);
@@ -176,6 +182,7 @@ namespace TestQuest
         {
             var checkedRadioButton = FindViewById<RadioButton>(radioGroup1.CheckedRadioButtonId);
                 counter+=1;
+            // ERROR rezultātu skaitītājs rightAnswers darbojas nepareizi :(
                 if (radioGroup1.CheckedRadioButtonId == -1)
                 {  //nekas nav ieklikšķināts - nepareiza atbilde
                 }

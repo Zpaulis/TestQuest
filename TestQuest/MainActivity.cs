@@ -7,6 +7,7 @@ using Android.Views.InputMethods;
 using Android.Widget;
 using AndroidX.AppCompat.App;
 
+[assembly: UsesPermission(Android.Manifest.Permission.WriteExternalStorage)]
 
 
 namespace TestQuest
@@ -16,8 +17,15 @@ namespace TestQuest
     {
         public int qCount;
         private string nickname;
+        private readonly string[] Permissions =
+        {
+            Android.Manifest.Permission.WriteExternalStorage,
+        };
+
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            RequestPermissions(Permissions, 0);
 
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
@@ -46,6 +54,7 @@ namespace TestQuest
             Button btnStartQuest = FindViewById<Button>(Resource.Id.btnStartQuest);
             btnStartQuest.Click += (s, e) =>
             {
+                tiesibas();
                 String start = DateTime.Now.ToString();
                 String nickname = (edtNickname.Text != "") ? edtNickname.Text : "Annonymous";
                 Intent intent = new Intent(this, typeof(QuestActivity));
@@ -103,5 +112,13 @@ namespace TestQuest
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
+        private void tiesibas()
+        {
+            if (CheckSelfPermission(Android.Manifest.Permission.WriteExternalStorage) != Android.Content.PM.Permission.Granted)
+            {
+                RequestPermissions(Permissions, 0);
+            }
+        }
+
     }
 }

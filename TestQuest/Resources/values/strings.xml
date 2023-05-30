@@ -4,7 +4,7 @@
     <string name="quest_title">Latvian Cities</string>
     <string name="quest_help01">Write Your Nickname:</string>
     <string name="quest_help02">Choose Your question count in a test:</string>
-    <string name="nickHint">Annonymous</string>
+    <string name="nickHint">Anonymous</string>
     <string name="logo_description">Quest logo</string>
     <string name="btn_start_quest">START QUEST</string>
    <string-array name="questionCount">

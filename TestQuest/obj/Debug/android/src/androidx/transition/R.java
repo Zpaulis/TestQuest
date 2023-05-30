@@ -744,8 +744,8 @@ public final class R {
 		public static final int transition_transform = 0x7f0901f1;
 		public static final int uniform = 0x7f0901f7;
 		public static final int up = 0x7f0901f9;
-		public static final int visible_removing_fragment_view_tag = 0x7f090203;
-		public static final int wrap_content = 0x7f09020a;
+		public static final int visible_removing_fragment_view_tag = 0x7f090204;
+		public static final int wrap_content = 0x7f09020b;
 	}
 	public static final class integer {
 		public static final int abc_config_activityDefaultDur = 0x7f0a0000;

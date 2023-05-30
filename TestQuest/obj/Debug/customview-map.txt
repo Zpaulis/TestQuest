@@ -43,3 +43,4 @@ style;obj/Debug/res/values/styles.xml
 TextView;obj/Debug/res/layout/activity_main.xml
 TextView;obj/Debug/res/layout/questionlayout.xml
 TextView;obj/Debug/res/layout/resultlayout.xml
+VideoView;obj/Debug/res/layout/resultlayout.xml

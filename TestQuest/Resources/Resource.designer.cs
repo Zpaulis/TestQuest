@@ -11028,58 +11028,61 @@ namespace TestQuest
 			public const int vertical_only = 2131296763;
 			
 			// aapt resource value: 0x7F0901FC
-			public const int view_offset_helper = 2131296764;
+			public const int vidResult = 2131296764;
 			
 			// aapt resource value: 0x7F0901FD
-			public const int view_transition = 2131296765;
+			public const int view_offset_helper = 2131296765;
 			
 			// aapt resource value: 0x7F0901FE
-			public const int view_tree_lifecycle_owner = 2131296766;
+			public const int view_transition = 2131296766;
 			
 			// aapt resource value: 0x7F0901FF
-			public const int view_tree_on_back_pressed_dispatcher_owner = 2131296767;
+			public const int view_tree_lifecycle_owner = 2131296767;
 			
 			// aapt resource value: 0x7F090200
-			public const int view_tree_saved_state_registry_owner = 2131296768;
+			public const int view_tree_on_back_pressed_dispatcher_owner = 2131296768;
 			
 			// aapt resource value: 0x7F090201
-			public const int view_tree_view_model_store_owner = 2131296769;
+			public const int view_tree_saved_state_registry_owner = 2131296769;
 			
 			// aapt resource value: 0x7F090202
-			public const int visible = 2131296770;
+			public const int view_tree_view_model_store_owner = 2131296770;
 			
 			// aapt resource value: 0x7F090203
-			public const int visible_removing_fragment_view_tag = 2131296771;
+			public const int visible = 2131296771;
 			
 			// aapt resource value: 0x7F090204
-			public const int west = 2131296772;
+			public const int visible_removing_fragment_view_tag = 2131296772;
 			
 			// aapt resource value: 0x7F090205
-			public const int wide = 2131296773;
-			
-			// aapt resource value: 0x7F090208
-			public const int withinBounds = 2131296776;
+			public const int west = 2131296773;
 			
 			// aapt resource value: 0x7F090206
-			public const int withText = 2131296774;
-			
-			// aapt resource value: 0x7F090207
-			public const int with_icon = 2131296775;
+			public const int wide = 2131296774;
 			
 			// aapt resource value: 0x7F090209
-			public const int wrap = 2131296777;
+			public const int withinBounds = 2131296777;
+			
+			// aapt resource value: 0x7F090207
+			public const int withText = 2131296775;
+			
+			// aapt resource value: 0x7F090208
+			public const int with_icon = 2131296776;
 			
 			// aapt resource value: 0x7F09020A
-			public const int wrap_content = 2131296778;
+			public const int wrap = 2131296778;
 			
 			// aapt resource value: 0x7F09020B
-			public const int wrap_content_constrained = 2131296779;
+			public const int wrap_content = 2131296779;
 			
 			// aapt resource value: 0x7F09020C
-			public const int x_left = 2131296780;
+			public const int wrap_content_constrained = 2131296780;
 			
 			// aapt resource value: 0x7F09020D
-			public const int x_right = 2131296781;
+			public const int x_left = 2131296781;
+			
+			// aapt resource value: 0x7F09020E
+			public const int x_right = 2131296782;
 			
 			static Id()
 			{
@@ -11751,6 +11754,12 @@ namespace TestQuest
 			
 			// aapt resource value: 0x7F100000
 			public const int firebase_common_keep = 2131755008;
+			
+			// aapt resource value: 0x7F100001
+			public const int lose = 2131755009;
+			
+			// aapt resource value: 0x7F100002
+			public const int win = 2131755010;
 			
 			static Raw()
 			{

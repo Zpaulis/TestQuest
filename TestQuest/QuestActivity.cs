@@ -112,7 +112,7 @@ namespace TestQuest
                 // ToDo - savākt statistiku par katra jautājuma rezultātiem
                 if (i == qCount - 1)
                 {
-                    result.perc = rightAnswers / qCount;
+                    result.perc = (double)rightAnswers / (double)qCount;
                     string json = JsonConvert.SerializeObject(result, Formatting.Indented);
                     Intent intent = new Intent(this, typeof(ResultActivity));
                     intent.PutExtra("Result", json);
@@ -221,7 +221,6 @@ namespace TestQuest
 
         private void CreateResult()
         {
-            // new Result("", "", "Anonymous", "", 10, false, false, false, false, false, false, false, false, false, false, 2.5);
             result.key = "";
             result.login = "";
             result.nick = "Anonymous";

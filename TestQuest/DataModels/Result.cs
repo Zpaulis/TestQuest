@@ -18,7 +18,7 @@ namespace TestQuest.DataModels
         public bool q8 { get; set; }
         public bool q9 { get; set; }
         public bool q10 { get; set; }
-        public long perc { get; set; }
+        public double perc { get; set; }
 
         //public static Result Null => new Result("", "", "Anonymous", "", 10, false, false, false, false, false, false, false, false, false, false, 2.5);
 

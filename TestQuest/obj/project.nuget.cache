@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "nxMLQfluqxjqDy2fzHTItizm4vsDwzDHD8nIe11CJ7x1U/7fGyVrjyIicTLDINkFdMASA8Mfgpwtnq2X+ULG/A==",
+  "dgSpecHash": "qqJTWirAX1eAorjYucUdJ0/YWfLfrUjaeh25GdGmfT78ski93FfvVe+upS8QOIxm3841uJPmgvlCYGtcCGgrBQ==",
   "success": true,
   "projectFilePath": "/Users/paulismacbook/VIsualProjects/TestQuest/TestQuest/TestQuest.csproj",
   "expectedPackageFiles": [
@@ -21,9 +21,15 @@
     "/Users/paulismacbook/.nuget/packages/grpc.net.client/2.51.0/grpc.net.client.2.51.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/grpc.net.common/2.51.0/grpc.net.common.2.51.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/microsoft.data.sqlite/7.0.5/microsoft.data.sqlite.7.0.5.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/microsoft.data.sqlite.core/7.0.5/microsoft.data.sqlite.core.7.0.5.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/microsoft.extensions.logging.abstractions/3.0.3/microsoft.extensions.logging.abstractions.3.0.3.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.4/sqlitepclraw.bundle_e_sqlite3.2.1.4.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/sqlitepclraw.core/2.1.4/sqlitepclraw.core.2.1.4.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/sqlitepclraw.lib.e_sqlite3.android/2.1.4/sqlitepclraw.lib.e_sqlite3.android.2.1.4.nupkg.sha512",
+    "/Users/paulismacbook/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.4/sqlitepclraw.provider.e_sqlite3.2.1.4.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/square.okio/3.2.0/square.okio.3.2.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/square.okio.jvm/3.2.0/square.okio.jvm.3.2.0.nupkg.sha512",
     "/Users/paulismacbook/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",

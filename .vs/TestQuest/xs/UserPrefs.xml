@@ -1,13 +1,20 @@
 ﻿<Properties StartupConfiguration="{032AFB9F-287D-4D55-AB0A-72EA602D7316}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_3_-_api_28" AndroidDesignerPreferredDevice="Nexus 4" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/QuestActivity.cs">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
+  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_3_-_api_28" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/ResultActivity.cs">
     <Files>
       <File FileName="TestQuest/QuestActivity.cs" Line="185" Column="77" />
-      <File FileName="TestQuest/MainActivity.cs" Line="16" Column="30" />
-      <File FileName="TestQuest/ResultActivity.cs" Line="72" Column="75" />
+      <File FileName="TestQuest/MainActivity.cs" />
+      <File FileName="TestQuest/ResultActivity.cs" Line="137" Column="63" />
       <File FileName="TestQuest/Resources/layout/questionLayout.xml" />
-      <File FileName="TestQuest/DataModels/Result.cs" Line="1" Column="1" />
+      <File FileName="TestQuest/DataModels/Result.cs" Line="16" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -22,29 +29,11 @@
                 <Node name="Raw" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
-              <Node name="QuestActivity.cs" selected="True" />
+              <Node name="ResultActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>questionList</Value>
-          <Value>qCount</Value>
-          <Value>question</Value>
-          <Value>counter</Value>
-          <Value>actualQuestion</Value>
-          <Value>rightAnswers</Value>
-          <Value>result</Value>
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

@@ -15,6 +15,7 @@ using Result = TestQuest.DataModels.Result;
 //using static Android.Provider.ContactsContract.CommonDataKinds;
 using System.IO;
 using Microsoft.Data.Sqlite;
+using Xamarin.Essentials;
 //using static Android.Provider.Telephony.Mms;
 //using static System.Net.Mime.MediaTypeNames;
 
@@ -30,7 +31,7 @@ namespace TestQuest
 
         string connectionString;
         string pathToDatabase;
-
+        string dbFileName = "questresults.db";
         Java.IO.File sdDir = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
         string pathToExternalDb;
 
@@ -44,7 +45,7 @@ namespace TestQuest
             string json = Intent.GetStringExtra("Result");
             Result result = JsonConvert.DeserializeObject<Result>(json);
             // Vieta rezultātu saglabāšanai
-            pathToExternalDb = sdDir + "/" + "questresults.db";
+            pathToExternalDb = sdDir + "/" + dbFileName;
 
 
             Button btnSave = FindViewById<Button>(Resource.Id.btnSaveResult);
@@ -97,6 +98,10 @@ namespace TestQuest
                 StartActivity(intent);
                 Finish();
             };
+            btnShare.Click += (s, e) =>
+            {
+                ShareFile(dbFileName);
+            };
             btnQuit.Click += (s, e) =>
             {
                 QuitApplication();
@@ -122,7 +127,15 @@ namespace TestQuest
                 Finish();
             }
 
-
+        }
+        // Share rezultātu failu questresults.db
+        private void ShareFile(string Filename)
+        {
+            Share.RequestAsync(new ShareFileRequest
+            {
+                File = new ShareFile(Path.Combine(sdDir.ToString(), Filename)),
+                Title = Filename
+            });
         }
 
         private void CreateDB(string sqldb)

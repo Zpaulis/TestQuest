@@ -17,6 +17,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dip"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
         android:padding="20dip"
         android:text="@string/txt_question"/>
 

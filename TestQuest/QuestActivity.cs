@@ -57,7 +57,7 @@ namespace TestQuest
             result.nick = nickname;
             result.key = Intent.GetStringExtra("Start");
 
-            // Te vajadzētu būt jautājumu datu bāzes inicializācijai
+            // FixMe Te vajadzētu būt jautājumu datu bāzes inicializācijai
             //string path = AppDomain.CurrentDomain.BaseDirectory + @"study.json";
             //string path = Path.Combine(FileSystem.AppDataDirectory, "study.json");
             //System.Environment.SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", path);
@@ -87,7 +87,7 @@ namespace TestQuest
 
             for (int i = 0; i < qCount; i++ )
             {
-                string teststring = nickname + " have list of " + questionList.Count.ToString() + "questions; Max points " + counter.ToString() + "; Earned points " + rightAnswers.ToString() + "; Question" + i.ToString();
+                string teststring = nickname + " have list of " + questionList.Count.ToString() + " questions; Max points " + counter.ToString() + "; Earned points " + rightAnswers.ToString() + "; Question " + i.ToString();
                 txtNickname.Text = teststring; // vērtību kontrole aplikācijas testēšanas laikā
                 var quest = questionList[i];
 
@@ -167,6 +167,7 @@ namespace TestQuest
                 }
                 else
                 {// Kura izvēle ir ieklikšķināta
+                // FixMe Pareizo atbižu uzskaite rightAnsver un counteris counter darbojas nepareizi.
                 if ((checkedRadioButton.Text == actualQuestion.atb1text) && actualQuestion.atb1right) { rightAnswers += 1; };
                 if ((checkedRadioButton.Text == actualQuestion.atb2text) && actualQuestion.atb2right) { rightAnswers += 1; };
                 if ((checkedRadioButton.Text == actualQuestion.atb3text) && actualQuestion.atb3right) { rightAnswers += 1; };
@@ -237,28 +238,29 @@ namespace TestQuest
                 question.atb3right = false;
                 question.atb4right = true;
                 questionList.Add(question);
-
-                // Defaultie jautåjumi - var tikt izmantoti, kad nav interneta
-
-                questionList[0].jaut = "Kura ir Latvijas mazākā pilsēta pēc iedzīvotāju skaita 2022. gadā?";
-                questionList[0].atb1text = "Ape"; questionList[0].atb1right = false;
-                questionList[0].atb2text = "Piltene"; questionList[0].atb2right = false;
-                questionList[0].atb3text = "Subate"; questionList[0].atb3right = false;
-                questionList[0].atb4text = "Durbe"; questionList[0].atb4right = true;
-
-                //questionList[1].jaut = "Pašlaik Latvijā 81 pilsēta. Daļa ieguvusi pilsētas tiesības pirmās brīvvalsts laikā, daļa – padomju okupācijas laikā, dažas ir pavisam jaunas. Jautājums - cik Latvijas pilsētas savas pilsētu tiesības ieguvušas līdz 19. g.s. sākumam?";
-                //questionList[1].atb1text = "10"; questionList[1].atb1right = false;
-                //questionList[1].atb2text = "20"; questionList[1].atb2right = true;
-                //questionList[1].atb3text = "30"; questionList[1].atb3right = false;
-                //questionList[1].atb4text = "40"; questionList[1].atb4right = false;
-
-                //questionList[2].jaut = "Kurai Latvijas pisētai atbilst šis attēls?";
-                //questionList[2].media = "https://1drv.ms/i/s!AhRr-mQa5CNhhmcprrdSlB1PbWa-?e=cDMdjJ";
-                //questionList[2].atb1text = "Daugavpils"; questionList[2].atb1right = false;
-                //questionList[2].atb2text = "Ventspils"; questionList[2].atb2right = false;
-                //questionList[2].atb3text = "Ogre"; questionList[2].atb3right = true;
-                //questionList[2].atb4text = "Jelgava"; questionList[2].atb4right = false;
             }
+
+            // Defaultie jautåjumi - var tikt izmantoti, kad nav interneta
+
+            questionList[0].jaut = "Kura ir Latvijas mazākā pilsēta pēc iedzīvotāju skaita 2022. gadā?";
+            questionList[0].atb1text = "Ape"; questionList[0].atb1right = false;
+            questionList[0].atb2text = "Piltene"; questionList[0].atb2right = false;
+            questionList[0].atb3text = "Subate"; questionList[0].atb3right = false;
+            questionList[0].atb4text = "Durbe"; questionList[0].atb4right = true;
+
+            questionList[1].jaut = "Pašlaik Latvijā 81 pilsēta. Daļa ieguvusi pilsētas tiesības pirmās brīvvalsts laikā, daļa – padomju okupācijas laikā, dažas ir pavisam jaunas. Jautājums - cik Latvijas pilsētas savas pilsētu tiesības ieguvušas līdz 19. g.s. sākumam?";
+            questionList[1].atb1text = "10"; questionList[1].atb1right = false;
+            questionList[1].atb2text = "20"; questionList[1].atb2right = true;
+            questionList[1].atb3text = "30"; questionList[1].atb3right = false;
+            questionList[1].atb4text = "40"; questionList[1].atb4right = false;
+
+            questionList[2].jaut = "Kurai Latvijas pisētai atbilst šis attēls?";
+            questionList[2].media = "https://1drv.ms/i/s!AhRr-mQa5CNhhmcprrdSlB1PbWa-?e=cDMdjJ";
+            questionList[2].atb1text = "Daugavpils"; questionList[2].atb1right = false;
+            questionList[2].atb2text = "Ventspils"; questionList[2].atb2right = false;
+            questionList[2].atb3text = "Ogre"; questionList[2].atb3right = true;
+            questionList[2].atb4text = "Jelgava"; questionList[2].atb4right = false;
+
 
         }
 

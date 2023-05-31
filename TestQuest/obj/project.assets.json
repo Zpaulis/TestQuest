@@ -430,6 +430,21 @@
           "lib/netstandard2.0/SQLitePCLRaw.provider.e_sqlite3.dll": {}
         }
       },
+      "Square.OkHttp3/3.11.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkIO": "1.15.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid44/Square.OkHttp3.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid44/Square.OkHttp3.dll": {}
+        }
+      },
       "Square.OkIO/3.2.0": {
         "type": "package",
         "dependencies": {
@@ -481,6 +496,24 @@
           "lib/monoandroid12.0/Square.OkIO.JVM.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Square.Picasso/2.71828.0": {
+        "type": "package",
+        "dependencies": {
+          "Square.OkHttp3": "3.11.0",
+          "Xamarin.Android.Support.Annotations": "28.0.0.3",
+          "Xamarin.Android.Support.Exif": "28.0.0.3"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android"
+        ],
+        "compile": {
+          "lib/monoandroid90/Square.Picasso.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Square.Picasso.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -576,6 +609,39 @@
           "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Xamarin.Android.Support.Annotations/28.0.0.3": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "build": {
+          "build/monoandroid90/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Exif/28.0.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "[28.0.0.3]"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.Android.Support.Exif.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.Android.Support.Exif.dll": {}
+        },
+        "build": {
+          "build/monoandroid90/_._": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.7.1.1": {
@@ -1321,6 +1387,35 @@
         },
         "build": {
           "buildTransitive/monoandroid12.0/Xamarin.AndroidX.Emoji2.ViewsHelper.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.ExifInterface/1.3.6.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.6.0.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop",
+          "Mono.Android",
+          "System",
+          "System.Core",
+          "System.Numerics",
+          "System.Numerics.Vectors",
+          "System.Xml",
+          "mscorlib"
+        ],
+        "compile": {
+          "lib/monoandroid12.0/Xamarin.AndroidX.ExifInterface.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/monoandroid12.0/Xamarin.AndroidX.ExifInterface.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/monoandroid12.0/Xamarin.AndroidX.ExifInterface.targets": {}
         }
       },
       "Xamarin.AndroidX.Fragment/1.5.7.1": {
@@ -3828,6 +3923,18 @@
         "sqlitepclraw.provider.e_sqlite3.nuspec"
       ]
     },
+    "Square.OkHttp3/3.11.0": {
+      "sha512": "chd63F8Hh14XQIphPMdd9ZV29kQatPO2MpemyTb+qVGJTtqyPnAqHscSWJCEkmwKv9MzyuUMMbntuAbmKX7cqw==",
+      "type": "package",
+      "path": "square.okhttp3/3.11.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/Square.OkHttp3.dll",
+        "square.okhttp3.3.11.0.nupkg.sha512",
+        "square.okhttp3.nuspec"
+      ]
+    },
     "Square.OkIO/3.2.0": {
       "sha512": "+xzshwha4fLFXl6R9zjpGjOtEyXVhTCG/J5XAC5V9pUbufLZinoGLeOihaCULl6HhUM0MiQMEaialItvvswGEA==",
       "type": "package",
@@ -3862,6 +3969,19 @@
         "lib/net6.0-android31.0/Square.OkIO.JVM.xml",
         "square.okio.jvm.3.2.0.nupkg.sha512",
         "square.okio.jvm.nuspec"
+      ]
+    },
+    "Square.Picasso/2.71828.0": {
+      "sha512": "Wwpvqc7KICD5twuvNeshyI6S5DzzgMLgqELu9JZL3t9eZnEBlO9Rs5imRBGT8Sd6XB6emYFKyxIcri96SytTwA==",
+      "type": "package",
+      "path": "square.picasso/2.71828.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/monoandroid90/Square.Picasso.dll",
+        "square.picasso.2.71828.0.nupkg.sha512",
+        "square.picasso.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -4064,6 +4184,48 @@
         "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Xamarin.Android.Support.Annotations/28.0.0.3": {
+      "sha512": "lpKctgvxOhFTTXt7BXC6slMfG7ZqmjBe6hAl1V8A9famPA7f5B6ZuDy3cs5w4CERuP7+ufC+WjeV45Hg3CDPpA==",
+      "type": "package",
+      "path": "xamarin.android.support.annotations/28.0.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid80/Xamarin.Android.Support.Annotations.targets",
+        "build/monoandroid81/Xamarin.Android.Support.Annotations.targets",
+        "build/monoandroid90/Xamarin.Android.Support.Annotations.targets",
+        "build/monoandroid90/Xamarin.Android.Support.BuildTasks.dll",
+        "lib/monoandroid60/_._",
+        "lib/monoandroid70/_._",
+        "lib/monoandroid71/Xamarin.Android.Support.Annotations.dll",
+        "lib/monoandroid80/Xamarin.Android.Support.Annotations.dll",
+        "lib/monoandroid81/Xamarin.Android.Support.Annotations.dll",
+        "lib/monoandroid90/Xamarin.Android.Support.Annotations.dll",
+        "xamarin.android.support.annotations.28.0.0.3.nupkg.sha512",
+        "xamarin.android.support.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Exif/28.0.0.3": {
+      "sha512": "ksT2LmVktpJnDp6R0OGtKmhAP6Z+8ntpTigt8wVIok8S3m4osxh3AQP1ZkV488AthgQmNyEBc+qU1OH3Qjmjeg==",
+      "type": "package",
+      "path": "xamarin.android.support.exif/28.0.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/monoandroid71/Xamarin.Android.Support.Exif.targets",
+        "build/monoandroid80/Xamarin.Android.Support.Exif.targets",
+        "build/monoandroid81/Xamarin.Android.Support.Exif.targets",
+        "build/monoandroid90/Xamarin.Android.Support.Exif.targets",
+        "lib/monoandroid60/_._",
+        "lib/monoandroid70/_._",
+        "lib/monoandroid71/Xamarin.Android.Support.Exif.dll",
+        "lib/monoandroid80/Xamarin.Android.Support.Exif.dll",
+        "lib/monoandroid81/Xamarin.Android.Support.Exif.dll",
+        "lib/monoandroid90/Xamarin.Android.Support.Exif.dll",
+        "xamarin.android.support.exif.28.0.0.3.nupkg.sha512",
+        "xamarin.android.support.exif.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.7.1.1": {
@@ -4659,6 +4821,31 @@
         "lib/net6.0-android31.0/Xamarin.AndroidX.Emoji2.ViewsHelper.xml",
         "xamarin.androidx.emoji2.viewshelper.1.3.0.2.nupkg.sha512",
         "xamarin.androidx.emoji2.viewshelper.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.ExifInterface/1.3.6.2": {
+      "sha512": "z3DcwLnHsCAie25dq+z0RizeM78TGVaH6uarLn+o1MFI2kuRImtaumX94fZlHpSmnrIlFtr15tDFfgPPbp1P5Q==",
+      "type": "package",
+      "path": "xamarin.androidx.exifinterface/1.3.6.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "aar/androidx.exifinterface.exifinterface.aar",
+        "build/monoandroid12.0/Xamarin.AndroidX.ExifInterface.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.ExifInterface.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.AndroidX.ExifInterface.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.ExifInterface.targets",
+        "icon.png",
+        "lib/monoandroid12.0/Xamarin.AndroidX.ExifInterface.dll",
+        "lib/monoandroid12.0/Xamarin.AndroidX.ExifInterface.pdb",
+        "lib/monoandroid12.0/Xamarin.AndroidX.ExifInterface.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.ExifInterface.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.ExifInterface.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.ExifInterface.xml",
+        "xamarin.androidx.exifinterface.1.3.6.2.nupkg.sha512",
+        "xamarin.androidx.exifinterface.nuspec"
       ]
     },
     "Xamarin.AndroidX.Fragment/1.5.7.1": {
@@ -6220,7 +6407,9 @@
       "Google.Cloud.Firestore >= 3.3.0",
       "Microsoft.Data.Sqlite >= 7.0.5",
       "Newtonsoft.Json >= 13.0.3",
+      "Square.Picasso >= 2.71828.0",
       "Xamarin.AndroidX.AppCompat >= 1.6.1.2",
+      "Xamarin.AndroidX.ExifInterface >= 1.3.6.2",
       "Xamarin.Essentials >= 1.7.5",
       "Xamarin.Firebase.Database >= 120.2.1",
       "Xamarin.Firebase.Firestore >= 124.6.0",
@@ -6271,9 +6460,17 @@
             "target": "Package",
             "version": "[13.0.3, )"
           },
+          "Square.Picasso": {
+            "target": "Package",
+            "version": "[2.71828.0, )"
+          },
           "Xamarin.AndroidX.AppCompat": {
             "target": "Package",
             "version": "[1.6.1.2, )"
+          },
+          "Xamarin.AndroidX.ExifInterface": {
+            "target": "Package",
+            "version": "[1.3.6.2, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",

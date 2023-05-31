@@ -145,6 +145,21 @@ javax.annotation.concurrent.NotThreadSafe;javax.annotation.concurrent.NotThreadS
 Javax.Annotation.Concurrent.IThreadSafe, Jsr305Binding;javax.annotation.concurrent.ThreadSafe
 Javax.Annotation.Concurrent.IThreadSafe;javax.annotation.concurrent.ThreadSafe
 javax.annotation.concurrent.ThreadSafe;javax.annotation.concurrent.ThreadSafe
+Square.OkHttp3.CallExtensions+ActionCallback, Square.OkHttp3;crc64e9db98a0d7058662.CallExtensions_ActionCallback
+Square.OkHttp3.CallExtensions.ActionCallback;crc64e9db98a0d7058662.CallExtensions_ActionCallback
+square.okhttp3.CallExtensions_ActionCallback;crc64e9db98a0d7058662.CallExtensions_ActionCallback
+Square.OkHttp3.OkHttpClient+Builder+AuthenticatorImpl, Square.OkHttp3;okhttp3.OkHttpClient$Builder_AuthenticatorImpl
+Square.OkHttp3.OkHttpClient.Builder.AuthenticatorImpl;okhttp3.OkHttpClient$Builder_AuthenticatorImpl
+okhttp3.OkHttpClient$Builder_AuthenticatorImpl;okhttp3.OkHttpClient$Builder_AuthenticatorImpl
+Square.OkHttp3.OkHttpClient+Builder+InterceptorImpl, Square.OkHttp3;okhttp3.OkHttpClient$Builder_InterceptorImpl
+Square.OkHttp3.OkHttpClient.Builder.InterceptorImpl;okhttp3.OkHttpClient$Builder_InterceptorImpl
+okhttp3.OkHttpClient$Builder_InterceptorImpl;okhttp3.OkHttpClient$Builder_InterceptorImpl
+Square.OkHttp3.OkHttpClient+Builder+DnsImpl, Square.OkHttp3;okhttp3.OkHttpClient$Builder_DnsImpl
+Square.OkHttp3.OkHttpClient.Builder.DnsImpl;okhttp3.OkHttpClient$Builder_DnsImpl
+okhttp3.OkHttpClient$Builder_DnsImpl;okhttp3.OkHttpClient$Builder_DnsImpl
+Square.OkHttp3.OkHttpClient+Builder+HostnameVerifierImpl, Square.OkHttp3;okhttp3.OkHttpClient$Builder_HostnameVerifierImpl
+Square.OkHttp3.OkHttpClient.Builder.HostnameVerifierImpl;okhttp3.OkHttpClient$Builder_HostnameVerifierImpl
+okhttp3.OkHttpClient$Builder_HostnameVerifierImpl;okhttp3.OkHttpClient$Builder_HostnameVerifierImpl
 Square.OkIO.IBufferedSink, Square.OkIO.JVM;okio.BufferedSink
 Square.OkIO.IBufferedSink;okio.BufferedSink
 okio.BufferedSink;okio.BufferedSink
@@ -160,6 +175,33 @@ okio.Sink;okio.Sink
 Square.OkIO.ISource, Square.OkIO.JVM;okio.Source
 Square.OkIO.ISource;okio.Source
 okio.Source;okio.Source
+Square.Picasso.Picasso+IListener, Square.Picasso;com.squareup.picasso.Picasso$Listener
+Square.Picasso.Picasso.IListener;com.squareup.picasso.Picasso$Listener
+com.squareup.picasso.Picasso$Listener;com.squareup.picasso.Picasso$Listener
+Square.Picasso.Picasso+IListenerImplementor, Square.Picasso;mono.com.squareup.picasso.Picasso_ListenerImplementor
+Square.Picasso.Picasso.IListenerImplementor;mono.com.squareup.picasso.Picasso_ListenerImplementor
+mono.com.squareup.picasso.Picasso_ListenerImplementor;mono.com.squareup.picasso.Picasso_ListenerImplementor
+Square.Picasso.Picasso+IRequestTransformer, Square.Picasso;com.squareup.picasso.Picasso$RequestTransformer
+Square.Picasso.Picasso.IRequestTransformer;com.squareup.picasso.Picasso$RequestTransformer
+com.squareup.picasso.Picasso$RequestTransformer;com.squareup.picasso.Picasso$RequestTransformer
+Square.Picasso.RequestCreator+ActionCallback, Square.Picasso;com.squareup.picasso.RequestCreator_ActionCallback
+Square.Picasso.RequestCreator.ActionCallback;com.squareup.picasso.RequestCreator_ActionCallback
+com.squareup.picasso.RequestCreator_ActionCallback;com.squareup.picasso.RequestCreator_ActionCallback
+Square.Picasso.ICache, Square.Picasso;com.squareup.picasso.Cache
+Square.Picasso.ICache;com.squareup.picasso.Cache
+com.squareup.picasso.Cache;com.squareup.picasso.Cache
+Square.Picasso.ICallback, Square.Picasso;com.squareup.picasso.Callback
+Square.Picasso.ICallback;com.squareup.picasso.Callback
+com.squareup.picasso.Callback;com.squareup.picasso.Callback
+Square.Picasso.IDownloader, Square.Picasso;com.squareup.picasso.Downloader
+Square.Picasso.IDownloader;com.squareup.picasso.Downloader
+com.squareup.picasso.Downloader;com.squareup.picasso.Downloader
+Square.Picasso.ITarget, Square.Picasso;com.squareup.picasso.Target
+Square.Picasso.ITarget;com.squareup.picasso.Target
+com.squareup.picasso.Target;com.squareup.picasso.Target
+Square.Picasso.ITransformation, Square.Picasso;com.squareup.picasso.Transformation
+Square.Picasso.ITransformation;com.squareup.picasso.Transformation
+com.squareup.picasso.Transformation;com.squareup.picasso.Transformation
 AndroidX.Activity.IFullyDrawnReporterOwner, Xamarin.AndroidX.Activity;androidx.activity.FullyDrawnReporterOwner
 AndroidX.Activity.IFullyDrawnReporterOwner;androidx.activity.FullyDrawnReporterOwner
 androidx.activity.FullyDrawnReporterOwner;androidx.activity.FullyDrawnReporterOwner
@@ -976,6 +1018,12 @@ androidx.emoji2.text.EmojiCompat$SpanFactory;androidx.emoji2.text.EmojiCompat$Sp
 AndroidX.Emoji2.Text.TypefaceEmojiRasterizer+IHasGlyph, Xamarin.AndroidX.Emoji2;androidx.emoji2.text.TypefaceEmojiRasterizer$HasGlyph
 AndroidX.Emoji2.Text.TypefaceEmojiRasterizer.IHasGlyph;androidx.emoji2.text.TypefaceEmojiRasterizer$HasGlyph
 androidx.emoji2.text.TypefaceEmojiRasterizer$HasGlyph;androidx.emoji2.text.TypefaceEmojiRasterizer$HasGlyph
+AndroidX.ExifInterface.Media.ExifInterface+IExifStreamType, Xamarin.AndroidX.ExifInterface;androidx.exifinterface.media.ExifInterface$ExifStreamType
+AndroidX.ExifInterface.Media.ExifInterface.IExifStreamType;androidx.exifinterface.media.ExifInterface$ExifStreamType
+androidx.exifinterface.media.ExifInterface$ExifStreamType;androidx.exifinterface.media.ExifInterface$ExifStreamType
+AndroidX.ExifInterface.Media.ExifInterface+IIfdType, Xamarin.AndroidX.ExifInterface;androidx.exifinterface.media.ExifInterface$IfdType
+AndroidX.ExifInterface.Media.ExifInterface.IIfdType;androidx.exifinterface.media.ExifInterface$IfdType
+androidx.exifinterface.media.ExifInterface$IfdType;androidx.exifinterface.media.ExifInterface$IfdType
 AndroidX.Fragment.App.FragmentManager+IBackStackEntry, Xamarin.AndroidX.Fragment;androidx.fragment.app.FragmentManager$BackStackEntry
 AndroidX.Fragment.App.FragmentManager.IBackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry
 androidx.fragment.app.FragmentManager$BackStackEntry;androidx.fragment.app.FragmentManager$BackStackEntry

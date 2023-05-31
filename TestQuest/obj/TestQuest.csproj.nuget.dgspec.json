@@ -44,9 +44,17 @@
               "target": "Package",
               "version": "[13.0.3, )"
             },
+            "Square.Picasso": {
+              "target": "Package",
+              "version": "[2.71828.0, )"
+            },
             "Xamarin.AndroidX.AppCompat": {
               "target": "Package",
               "version": "[1.6.1.2, )"
+            },
+            "Xamarin.AndroidX.ExifInterface": {
+              "target": "Package",
+              "version": "[1.3.6.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",

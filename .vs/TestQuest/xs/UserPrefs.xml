@@ -10,11 +10,10 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/QuestActivity.cs">
     <Files>
-      <File FileName="TestQuest/QuestActivity.cs" Line="227" Column="52" />
-      <File FileName="TestQuest/MainActivity.cs" Line="85" Column="41" />
-      <File FileName="TestQuest/ResultActivity.cs" Line="90" Column="14" />
-      <File FileName="TestQuest/Resources/layout/questionLayout.xml" />
-      <File FileName="TestQuest/DataModels/Result.cs" Line="21" Column="22" />
+      <File FileName="TestQuest/QuestActivity.cs" Line="264" Column="123" />
+      <File FileName="TestQuest/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="TestQuest/ResultActivity.cs" />
+      <File FileName="TestQuest/DataModels/Result.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -29,6 +28,7 @@
                 <Node name="Raw" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
+              <Node name="QuestActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>

@@ -24,6 +24,8 @@ using Xamarin.Essentials;
 using Result = TestQuest.DataModels.Result;
 using AndroidX.Core.App;
 using Newtonsoft.Json;
+using Square.Picasso;
+using System.Net;
 
 namespace TestQuest
 {
@@ -96,10 +98,28 @@ namespace TestQuest
                 radAtb2.Text = quest.atb2text;
                 radAtb3.Text = quest.atb3text;
                 radAtb4.Text = quest.atb4text;
-                radAtb1.Checked = false;
-                radAtb2.Checked = false;
-                radAtb3.Checked = false;
-                radAtb4.Checked = false;
+                if (quest.media != "")
+                {
+                    //Picasso.Get().Load(quest.media).Into(imgMedia);
+                    Picasso.Get()
+                        .Load(quest.media)
+                        .Resize(600, 400)
+                        .CenterCrop()
+                        .Error(Resource.Drawable.arrows)
+                        .Into(imgMedia);
+                    //Download image fom Web
+                    //WebClient wc= new WebClient();
+                    //var imagesBytes=wc.DownloadData(quest.media);
+                    //var bitmap = Android.Graphics.BitmapFactory.DecodeByteArray(imagesBytes, 0, imagesBytes.Length);
+                    //imgMedia.SetImageBitmap(bitmap);
+                } else
+                {
+                    Picasso.Get()
+                        .Load(Resource.Drawable.arrows)
+                        .Resize(300, 100)
+                        .CenterCrop()
+                        .Into(imgMedia);
+                }
                 actualQuestion = quest;
                 //radAtb1.Click += AnswerChoise;
                 //radAtb2.Click += AnswerChoise;
@@ -108,7 +128,11 @@ namespace TestQuest
 
                 await btnGiveAnsver.WhenClicked();
                 btnGiveAnsver.Click += AnswerApproved;
-
+                radAtb1.Checked = false;
+                radAtb2.Checked = false;
+                radAtb3.Checked = false;
+                radAtb4.Checked = false;
+                //imgMedia.SetImageResource(Resource.Drawable.arrows);
                 // Quests beidzies - apkopojam rezultātus
                 // ToDo - savākt statistiku par katra jautājuma rezultātiem
                 if (i == qCount - 1)
@@ -218,7 +242,7 @@ namespace TestQuest
             result.perc = 0;
         }
 
-        // Tiek izmantots, kamēr nav pieslēgta datu bāze.
+        // Tiek izmantots aplikācijas testēšanai, kamēr nav pieslēgta datu bāze.
         void getTestData()
         {
 
@@ -228,7 +252,7 @@ namespace TestQuest
                 Question question = new Question();
                 question.nr = key;
                 question.jaut = key + ". jautåjuma teksts";
-                question.media = "http:// adrese";
+                question.media = "";
                 question.atb1text = key + ". jautåjuma 1. atbildes teksts";
                 question.atb2text = key + ". jautåjuma 2. atbildes teksts";
                 question.atb3text = key + ". jautåjuma 3. atbildes teksts";
@@ -255,12 +279,32 @@ namespace TestQuest
             questionList[1].atb4text = "40"; questionList[1].atb4right = false;
 
             questionList[2].jaut = "Kurai Latvijas pisētai atbilst šis attēls?";
-            questionList[2].media = "https://1drv.ms/i/s!AhRr-mQa5CNhhmcprrdSlB1PbWa-?e=cDMdjJ";
+            questionList[2].media = "https://ucd661da67193945dffe5a874722.previews.dropboxusercontent.com/p/thumb/AB5JkI0o3vrHZ1nvel5HZPcygGfoVGOnrxoyxBC-StDTWe_zhay1fXrGOtIgIu6uksus2mdk5sX5KtWDcw6c5iKp5sN_KIPoxw8AX9FPitcO5Ms_nA-4H7_T-3mGA_CDK85epJXRGFSeI2fiNCJqrndiJJ9F7AcnNDEbqFhWYzSGuWQI95V0V6jGN7QiGUMa8vR5riqyyK4MhR2_ZgYnDmGgzDJsjt71jSpJsUgDoF1U2_7RQDEoImmr8lcxaHY-MlwETMyJp6vmEmhoIMwU1N07PHAuNiTPdbxb6-DFf2KKWfAWnBFK2u4FOcdyyxg0A9V35adRDxQJfPLyve0RVSSYhMacqEk-uq_satQ5op9eYv_fYzNGijVPS0wpRDbE0zCnr-pBcqVwEgdBI2lD_-3u7M4FD7U2d6r8J0784R5LZA/p.png";
             questionList[2].atb1text = "Daugavpils"; questionList[2].atb1right = false;
             questionList[2].atb2text = "Ventspils"; questionList[2].atb2right = false;
             questionList[2].atb3text = "Ogre"; questionList[2].atb3right = true;
             questionList[2].atb4text = "Jelgava"; questionList[2].atb4right = false;
 
+            questionList[3].jaut = "Pilsēta izveidojusies pie 1953. gadā dibinātās kūdras fabrikas, 1954. gadā tā ieguva strādnieku ciemata tiesības, 1961. gadā kļuva par pilsētciematu, bet 1991. gadā pārveidota par pilsētu ar lauku teritoriju. Par kuru pilsētu šis stāsts?";
+            questionList[3].media = "";
+            questionList[3].atb1text = "Seda"; questionList[3].atb1right = true;
+            questionList[3].atb2text = "Baloži"; questionList[3].atb2right = false;
+            questionList[3].atb3text = "Vangaži"; questionList[3].atb3right = false;
+            questionList[3].atb4text = "Baldone"; questionList[3].atb4right = false;
+
+            questionList[4].jaut = "Pēdējā administratīvi teritoriālā reforma stājusies spēkā 2021. gada 1. jūlijā. Kura no šīm neietilpst septiņu valstspilsētu skaitā?";
+            questionList[4].media = "";
+            questionList[4].atb1text = "Jēkabpils"; questionList[4].atb1right = false;
+            questionList[4].atb2text = "Ogre"; questionList[4].atb2right = false;
+            questionList[4].atb3text = "Rēzekne"; questionList[4].atb3right = false;
+            questionList[4].atb4text = "Bauska"; questionList[4].atb4right = true;
+
+            questionList[5].jaut = "Piemineklis Vienoti Latvijai atrodas Rēzeknē. Kā tautā sauc šo pieminekli?";
+            questionList[5].media = "https://skolenuekskursijas.lv/wp-content/uploads/2018/11/R-zekne-latgales-M-ra2.jpg";
+            questionList[5].atb1text = "Latgales Līze"; questionList[5].atb1right = false;
+            questionList[5].atb2text = "Latgales Māra"; questionList[5].atb2right = true;
+            questionList[5].atb3text = "Latgales Milda"; questionList[5].atb3right = false;
+            questionList[5].atb4text = "Latgales Brīvības piemineklis"; questionList[5].atb4right = false;
 
         }
 

@@ -306,6 +306,34 @@ namespace TestQuest
             questionList[5].atb3text = "Latgales Milda"; questionList[5].atb3right = false;
             questionList[5].atb4text = "Latgales Brīvības piemineklis"; questionList[5].atb4right = false;
 
+            questionList[6].jaut = "Līdz 1990. gadam šo pilsētu sauca par Stučku. Kā to sauc tagad?";
+            questionList[6].media = "";
+            questionList[6].atb1text = "Pļaviņas"; questionList[6].atb1right = false;
+            questionList[6].atb2text = "Jaunjelgava"; questionList[6].atb2right = false;
+            questionList[6].atb3text = "Jēkabpils"; questionList[6].atb3right = false;
+            questionList[6].atb4text = "Aizkraukle"; questionList[6].atb4right = true;
+
+            questionList[7].jaut = "Kura ir Latvijas pilsēta atrodas visaugstāk - aptuveni 200 m virs jūras līmeņa?";
+            questionList[7].media = "";
+            questionList[7].atb1text = "Alūksne"; questionList[7].atb1right = true;
+            questionList[7].atb2text = "Rūjiena"; questionList[7].atb2right = false;
+            questionList[7].atb3text = "Ape"; questionList[7].atb3right = false;
+            questionList[7].atb4text = "Ainaži"; questionList[7].atb4right = false;
+
+            questionList[8].jaut = "Kura pilsēta atrodas padziļinājuma vietā, kas veidojies meteorīta trieciena rezultātā? Šis krāteris ir viens no lelākajiem meteorītu krāteriem Eiropā.";
+            questionList[8].media = "";
+            questionList[8].atb1text = "Talsi"; questionList[8].atb1right = false;
+            questionList[8].atb2text = "Dobele"; questionList[8].atb2right = true;
+            questionList[8].atb3text = "Sabile"; questionList[8].atb3right = false;
+            questionList[8].atb4text = "Grobiņa"; questionList[8].atb4right = false;
+
+            questionList[9].jaut = "Kā 1961. gadā Arvīds Pelše ierosināja pārsaukt Rīgu?";
+            questionList[9].media = "";
+            questionList[9].atb1text = "Padlatvija"; questionList[9].atb1right = false;
+            questionList[9].atb2text = "Kirhenšteina"; questionList[9].atb2right = false;
+            questionList[9].atb3text = "Sovetska"; questionList[9].atb3right = false;
+            questionList[9].atb4text = "Gagarina"; questionList[9].atb4right = true;
+
         }
 
 

@@ -1,19 +1,7 @@
 ﻿<Properties StartupConfiguration="{032AFB9F-287D-4D55-AB0A-72EA602D7316}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
-  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredDevice="Nexus 4" AndroidDesignerPreferredTheme="AppTheme" PreferredExecutionTarget="Android.pixel_3_-_api_28" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workbench ActiveDocument="TestQuest/QuestActivity.cs">
     <Files>
-      <File FileName="TestQuest/QuestActivity.cs" Line="264" Column="123" />
-      <File FileName="TestQuest/MainActivity.cs" Line="1" Column="1" />
-      <File FileName="TestQuest/ResultActivity.cs" />
-      <File FileName="TestQuest/DataModels/Result.cs" />
+      <File FileName="TestQuest/QuestActivity.cs" Line="297" Column="86" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -28,7 +16,6 @@
                 <Node name="Raw" expanded="True" />
                 <Node name="values" expanded="True" />
               </Node>
-              <Node name="QuestActivity.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -47,4 +34,13 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.2.0.0" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_3_-_api_28" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TestQuest AndroidDesignerPreferredTheme="AppTheme" AndroidDesignerPreferredDevice="Nexus 4" PreferredExecutionTarget="Android.pixel_3_-_api_28" />
 </Properties>

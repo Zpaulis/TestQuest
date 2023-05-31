@@ -55,6 +55,7 @@ namespace TestQuest
             string nickname = Intent.GetStringExtra("Nickname");
             CreateResult();
             result.nick = nickname;
+            result.key = Intent.GetStringExtra("Start");
 
             // Te vajadzētu būt jautājumu datu bāzes inicializācijai
             //string path = AppDomain.CurrentDomain.BaseDirectory + @"study.json";
@@ -86,7 +87,7 @@ namespace TestQuest
 
             for (int i = 0; i < qCount; i++ )
             {
-                string teststring = nickname + " List of " + questionList.Count.ToString() + "; " + counter.ToString() + "; " + rightAnswers.ToString() + "; " + i.ToString();
+                string teststring = nickname + " have list of " + questionList.Count.ToString() + "questions; Max points " + counter.ToString() + "; Earned points " + rightAnswers.ToString() + "; Question" + i.ToString();
                 txtNickname.Text = teststring; // vērtību kontrole aplikācijas testēšanas laikā
                 var quest = questionList[i];
 
@@ -113,6 +114,7 @@ namespace TestQuest
                 if (i == qCount - 1)
                 {
                     result.perc = (double)rightAnswers / (double)qCount;
+                    result.size = qCount;
                     string json = JsonConvert.SerializeObject(result, Formatting.Indented);
                     Intent intent = new Intent(this, typeof(ResultActivity));
                     intent.PutExtra("Result", json);
@@ -154,29 +156,6 @@ namespace TestQuest
 
         }
 
-        // Tiek izmantots, kamēr nav pieslēgta datu bāze.
-        void getTestData()
-        {
-
-            for (int i = 1; i < 11; i++)
-            {
-                string key = i.ToString();
-                Question question = new Question();
-                question.nr = key;
-                question.jaut = key + ". jautåjuma teksts";
-                question.media = "http:// adrese";
-                question.atb1text = key + ". jautåjuma 1. atbildes teksts";
-                question.atb2text = key + ". jautåjuma 2. atbildes teksts";
-                question.atb3text = key + ". jautåjuma 3. atbildes teksts";
-                question.atb4text = key + ". jautåjuma 4. atbildes teksts";
-                question.atb1right = false;
-                question.atb2right = false;
-                question.atb3right = false;
-                question.atb4right = true;
-                questionList.Add(question);
-            }
-
-        }
         // pieņem atbildi, kad nospiests Button
         private void AnswerApproved(object sender, EventArgs e)
         {
@@ -209,15 +188,15 @@ namespace TestQuest
                 //        }
                 //    }
             }
-            Toast.MakeText(this, rightAnswers.ToString(), ToastLength.Long).Show();
+            //Toast.MakeText(this, rightAnswers.ToString(), ToastLength.Short).Show();
         }
 
         // Apstrādā Radio butonus - netiek izmantots
-        private void AnswerChoise(object sender, EventArgs e)
-        {
-            RadioButton rb = (RadioButton)sender;
-            Toast.MakeText(this, rb.Text, ToastLength.Short).Show();
-        }
+        //private void AnswerChoise(object sender, EventArgs e)
+        //{
+        //    RadioButton rb = (RadioButton)sender;
+        //    Toast.MakeText(this, rb.Text, ToastLength.Short).Show();
+        //}
 
         private void CreateResult()
         {
@@ -237,6 +216,52 @@ namespace TestQuest
             result.q10 = false;
             result.perc = 0;
         }
+
+        // Tiek izmantots, kamēr nav pieslēgta datu bāze.
+        void getTestData()
+        {
+
+            for (int i = 1; i < 11; i++)
+            {
+                string key = i.ToString();
+                Question question = new Question();
+                question.nr = key;
+                question.jaut = key + ". jautåjuma teksts";
+                question.media = "http:// adrese";
+                question.atb1text = key + ". jautåjuma 1. atbildes teksts";
+                question.atb2text = key + ". jautåjuma 2. atbildes teksts";
+                question.atb3text = key + ". jautåjuma 3. atbildes teksts";
+                question.atb4text = key + ". jautåjuma 4. atbildes teksts";
+                question.atb1right = false;
+                question.atb2right = false;
+                question.atb3right = false;
+                question.atb4right = true;
+                questionList.Add(question);
+
+                // Defaultie jautåjumi - var tikt izmantoti, kad nav interneta
+
+                questionList[0].jaut = "Kura ir Latvijas mazākā pilsēta pēc iedzīvotāju skaita 2022. gadā?";
+                questionList[0].atb1text = "Ape"; questionList[0].atb1right = false;
+                questionList[0].atb2text = "Piltene"; questionList[0].atb2right = false;
+                questionList[0].atb3text = "Subate"; questionList[0].atb3right = false;
+                questionList[0].atb4text = "Durbe"; questionList[0].atb4right = true;
+
+                //questionList[1].jaut = "Pašlaik Latvijā 81 pilsēta. Daļa ieguvusi pilsētas tiesības pirmās brīvvalsts laikā, daļa – padomju okupācijas laikā, dažas ir pavisam jaunas. Jautājums - cik Latvijas pilsētas savas pilsētu tiesības ieguvušas līdz 19. g.s. sākumam?";
+                //questionList[1].atb1text = "10"; questionList[1].atb1right = false;
+                //questionList[1].atb2text = "20"; questionList[1].atb2right = true;
+                //questionList[1].atb3text = "30"; questionList[1].atb3right = false;
+                //questionList[1].atb4text = "40"; questionList[1].atb4right = false;
+
+                //questionList[2].jaut = "Kurai Latvijas pisētai atbilst šis attēls?";
+                //questionList[2].media = "https://1drv.ms/i/s!AhRr-mQa5CNhhmcprrdSlB1PbWa-?e=cDMdjJ";
+                //questionList[2].atb1text = "Daugavpils"; questionList[2].atb1right = false;
+                //questionList[2].atb2text = "Ventspils"; questionList[2].atb2right = false;
+                //questionList[2].atb3text = "Ogre"; questionList[2].atb3right = true;
+                //questionList[2].atb4text = "Jelgava"; questionList[2].atb4right = false;
+            }
+
+        }
+
 
     }
 

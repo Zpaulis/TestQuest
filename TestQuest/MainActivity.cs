@@ -76,16 +76,16 @@ namespace TestQuest
             // ToDo šo varētu pārtaisīt ae Enum
             switch (choise)
             {
-                case "testā 3 jautājumi":
+                case "3 question quest":
                     qCount = 3;
                     break;
-                case "testā 5 jautājumi":
+                case "5 question quest":
                     qCount = 5;
                     break;
-                case "testā 7 jautājumi":
+                case "7 question quest":
                     qCount = 7;
                     break;
-                case "testā 10 jautājumu":
+                case "10 question quest":
                     qCount = 10;
                     break;
                 default:

@@ -8,10 +8,10 @@
     <string name="logo_description">Quest logo</string>
     <string name="btn_start_quest">START QUEST</string>
    <string-array name="questionCount">
-        <item>testā 3 jautājumi</item>
-        <item>testā 5 jautājumi</item>
-        <item>testā 7 jautājumi</item>
-        <item>testā 10 jautājumu</item>
+        <item>3 question quest</item>
+        <item>5 question quest</item>
+        <item>7 question quest</item>
+        <item>10 question quest</item>
    </string-array>
 
 
